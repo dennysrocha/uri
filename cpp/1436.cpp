@@ -18,4 +18,5 @@ int main() {
         }
         cout << "Case " << counter << ": " << res << endl;
     }
+    return 0;
 }
