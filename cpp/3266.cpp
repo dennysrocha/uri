@@ -23,19 +23,8 @@ int main() {
     res += 31.5*probability(tRingInt, tRingExt, sigma);
     res += 10.5*probability(tRingExt, dRingInt, sigma);
     res += 21.0*probability(dRingInt, dRingExt, sigma);
-    
-    double aux = 50;
 
-    if(res<10) {
-        cout.precision(9);
-        cout << fixed << res << endl;
-        cout << fixed << aux << endl;
-    }
-    else {
-        cout.precision(8);
-        cout << fixed << res << endl;
-    }
-
+    cout << setprecision(10) << res << endl;
     return 0;
 }
 
